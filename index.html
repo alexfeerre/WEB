@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MiniSite - Artículos</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="app/main.js"></script>
-
 </head>
 <body>
-  
+
   <header class="header">
     <nav id="logo">
-        <a class="logoesd" href="inicio.html"><img src="./assets/img/LOGOESD.svg"></a>
+        <a class="logoesd" href="https://esdmadrid.es/"><img src="./assets/img/LOGOESD.svg"></a>
     </nav>
   
     <nav id="buttons">
@@ -20,26 +18,46 @@
       <div class="notificacion"><img class="logoheader" src="./assets/img/PERSON.svg"></div>
       <div class="notificacion"><img class="logoheader" src="./assets/img/MESSAGES.svg"></div>
     </nav>
-</header>
+  </header>
 
-<body>
-
-  <div class="headerimg">
+  <div class="headerimg"></div>
+  <div class="titulotexto">
+    <h1 class="introtext">Bienvenid@ a las  publicaciones mensuales de la ESD</h1>
   </div>
 
-
-
-
-    <div class="container">
-      <h1>Últimos Artículos</h1>
-      <div id="articles-container" class="articles"></div>
+  <section class="container">
+    <div class="header_section">
+      <h3>Artículos</h3>
+      <input type="text" id="search-bar" placeholder="Búsqueda por palabras clave...">
     </div>
+    <article id="articles-container" class="articles"></article>
+    <div class="botonmas">
+      <button id="ver-mas-button">Ver más</button>
+    </div>
+  </section>
 
-<button id="ver-mas-button">Ver más</button>
+  <article class="posters">
+    <div class="botonmas">
+      <a class="botonposter" href="assets/img/POSTER01.pdf" target="_blank">POSTER 01</a>
+    </div>
+    <div class="botonmas">
+      <a class="botonposter" href="assets/img/POSTER02.pdf" target="_blank">POSTER 02</a>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <header class="footerheadertext">
+      <h1 class="footertitle">Suscríbete para recibir notificaciones</h1>
+      <p class="footertext">Ahora puedes suscribirte para recibir notificaciones y alertas en cuanto un nuevo artículo se publique en la web. Asegúrate de ser de l@s primer@s en conocer información de último momento sobre los proyectos de la ESD.</p>
+    </header>
+    <section class="flexmail">
+      <input class="box" type="text" id="emailInput" placeholder="Ingrese su email">
+      <button class="botonventa" id="enviarCorreoBtn">Enviar Correo</button>
+    </section>
+  
+    <div id="mensaje" class="mensaje"></div>
+  </footer>
+
+  <script src="app/main.js"></script>
 </body>
-
-<footer>
-
-</footer>
-  </body>
 </html>

@@ -9,9 +9,36 @@
 
 </head>
 <body>
-  <div class="container">
+  
+  <header class="header">
+    <nav id="logo">
+        <a class="logoesd" href="inicio.html"><img src="./assets/img/LOGOESD.svg"></a>
+    </nav>
+  
+    <nav id="buttons">
+      <div class="notificacion"><img class="logoheader" src="./assets/img/CAMPANA.svg"></div>
+      <div class="notificacion"><img class="logoheader" src="./assets/img/PERSON.svg"></div>
+      <div class="notificacion"><img class="logoheader" src="./assets/img/MESSAGES.svg"></div>
+    </nav>
+  </header>
+
+  <div class="containerdetail">
     <div id="article-details" class="article-details"></div>
   </div>
 
+
+
+  <footer class="footer">
+    <header class="footerheadertext">
+      <h1 class="footertitle">Suscríbete para recibir notificaciones</h1>
+      <p class="footertext">Ahora puedes suscribirte para recibir notificaciones y alertas en cuanto un nuevo artículo se publique en la web. Asegúrate de ser de l@s primer@s en conocer información de último momento sobre los proyectos de la ESD.</p>
+    </header>
+    <section class="flexmail">
+      <input class="box" type="text" id="emailInput" placeholder="Ingrese su email">
+      <button class="botonventa" id="enviarCorreoBtn">Enviar Correo</button>
+    </section>
+  
+    <div id="mensaje" class="mensaje"></div>
+  </footer>
 </body>
 </html>
