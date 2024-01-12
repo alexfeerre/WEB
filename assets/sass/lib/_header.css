@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 24px 0px 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoesd {
+  mix-blend-mode: screen;
+}
+
+#logo {
+  margin-right: 185px;
+  margin-top: 5px;
+  position: relative;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.notificacion {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  border: 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.notificacion:hover {
+  cursor: pointer;
+}
+
+.logoheader {
+  width: 20px;
+  height: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  max-width: 20px;
+}
