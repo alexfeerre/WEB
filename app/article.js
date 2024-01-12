@@ -40,8 +40,8 @@ window.onload = () => {
           </div>
           </div>
           <section class="datadetails">
-          <p class="entity">${article.entidad ? `<p class="entidaddetail">Entidad: ${article.entidad}` : 'Entidad no especificada'}</p>
-          <p class="linedetail">${article.linea_investigacion ? `Línea de investigación: ${article.linea_investigacion}` : 'Línea de investigación no especificada'}</p>
+          ${article.entidad ? `<p class="entidaddetail" style="padding: 10px 15px; background-color: none; border: 2px solid; border-radius: 4px;">Entidad: ${article.entidad}</p>` : '<p class="entidaddetail" style="padding: 10px 15px; background-color: none; border: 2px solid; border-radius: 4px;">Entidad no especificada</p>'}
+          ${article.linea_investigacion ? `<p class="linedetail" style="padding: 10px 15px; background-color: none; border: 2px solid; border-radius: 4px; display: flex; flex-direction: row; justify-content: flex-end;">Línea de investigación: ${article.linea_investigacion}</p>` : '<p class="linedetail" style="padding: 10px 15px; background-color: none; border: 2px solid; border-radius: 4px;">Línea de investigación no especificada</p>'}
           <p class="maildetail">${article.correo_docente ? `Correo del docente: ${article.correo_docente}` : 'Correo del docente no especificado'}</p>
           <p class="descriptiondetail" >${article.descripcion ? `Descripción: ${article.descripcion}` : 'Descripción no especificada'}</p>
           <p class="keydetail">${article.palabras_clave ? `Palabras clave: ${article.palabras_clave}` : 'Palabras clave no especificadas'}</p>
